@@ -7,16 +7,12 @@ export default function QuantityCounter({
 }) {
   return (
     <div className="ProductQuantityDiv">
-      <div
-        onClick={() => handleRemoveQuantity(id, mode)}
-        className="QuantityBtn"
-      >
-        <p>➖</p>
+      <div>
+        <button onClick={() => handleRemoveQuantity(id, mode)}>-</button>
       </div>
-
       <p>{productQuantity}</p>
-      <div onClick={() => handleAddQuantity(id, mode)} className="QuantityBtn">
-        <p>➕</p>
+      <div>
+        <button onClick={() => handleAddQuantity(id, mode)}>+</button>
       </div>
     </div>
   );

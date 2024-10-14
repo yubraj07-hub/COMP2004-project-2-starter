@@ -28,7 +28,7 @@ export default function CartCard({
 
       <div>
         <h3>
-          Total: {(parseFloat(price.replace("$", "")) * quantity).toFixed(2)}
+          Total: ${(parseFloat(price.replace("$", "")) * quantity).toFixed(2)}
         </h3>
         <button
           onClick={() => handleRemoveFromCart(id)}
