@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import CartContainer from "./CartContainer";
 import ProductsContainer from "./ProductsContainer";
 import NavBar from "./NavBar";
-import axios from "axios";
+import axios from "axios"
 
 export default function GroceriesAppContainer({ products }) {
 
